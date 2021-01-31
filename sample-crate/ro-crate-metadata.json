@@ -112,6 +112,12 @@
       ],
       "hasPart": [
         {
+          "@id": "LICENSE"
+        },
+        {
+          "@id": "README.md"
+        },
+        {
           "@id": "index.html"
         },
         {
@@ -271,15 +277,13 @@
     {
       "@id": "index.html",
       "@type": "File",
-      "contentSize": 17,
+      "contentSize": "17",
       "creator": "",
       "dateModified": "2021-01-19T15:47:13+11:00",
       "description": "",
-      "encodingFormat": [
-        {
-          "@id": "https://www.nationalarchives.gov.uk/PRONOM/pronom"
-        }
-      ],
+      "encodingFormat": {
+        "@id": "https://www.nationalarchives.gov.uk/PRONOM/pronom"
+      },
       "fileFormat": "",
       "name": "index.html",
       "thumbnail": ""
