@@ -10,6 +10,9 @@
     "https://w3id.org/ro/crate/1.1/context",
     {
       "@vocab": "http://schema.org/"
+    },
+    {
+      "@base": null
     }
   ],
   "@graph": [
@@ -111,7 +114,7 @@
       "name": ""
     },
     {
-      "@id": "/",
+      "@id": "./",
       "@type": "Dataset",
       "author": {
         "@id": "http://orcid.org/0000-0002-3545-944X"
@@ -197,7 +200,7 @@
       "@reverse": {
         "hasPart": [
           {
-            "@id": "/"
+            "@id": "./"
           }
         ]
       }
@@ -221,7 +224,7 @@
       "@reverse": {
         "hasPart": [
           {
-            "@id": "/"
+            "@id": "./"
           }
         ]
       }
@@ -234,7 +237,7 @@
       "@reverse": {
         "funder": [
           {
-            "@id": "/"
+            "@id": "./"
           },
           {
             "@id": "http://eresearch.uts.edu.au/projects/provisioner"
@@ -253,7 +256,7 @@
       "@reverse": {
         "citation": [
           {
-            "@id": "/"
+            "@id": "./"
           }
         ]
       }
@@ -294,7 +297,7 @@
         ],
         "author": [
           {
-            "@id": "/"
+            "@id": "./"
           },
           {
             "@id": "http://dx.doi.org/10.1000/123456"
@@ -325,7 +328,7 @@
         ],
         "contentLocation": [
           {
-            "@id": "/"
+            "@id": "./"
           }
         ]
       }
@@ -338,7 +341,7 @@
       "@reverse": {
         "license": [
           {
-            "@id": "/"
+            "@id": "./"
           }
         ]
       }
@@ -364,7 +367,7 @@
       "@reverse": {
         "funder": [
           {
-            "@id": "/"
+            "@id": "./"
           }
         ]
       }
@@ -379,7 +382,7 @@
       "@reverse": {
         "funder": [
           {
-            "@id": "/"
+            "@id": "./"
           },
           {
             "@id": "http://eresearch.uts.edu.au/projects/provisioner"
@@ -390,7 +393,7 @@
         ],
         "publisher": [
           {
-            "@id": "/"
+            "@id": "./"
           }
         ],
         "affiliation": [
@@ -448,7 +451,7 @@
       "@reverse": {
         "hasPart": [
           {
-            "@id": "/"
+            "@id": "./"
           }
         ]
       }
@@ -461,7 +464,7 @@
       "@reverse": {
         "hasPart": [
           {
-            "@id": "/"
+            "@id": "./"
           }
         ]
       }
@@ -475,7 +478,7 @@
       "@reverse": {
         "contactPoint": [
           {
-            "@id": "/"
+            "@id": "./"
           }
         ]
       }
@@ -484,22 +487,12 @@
       "@id": "pics/",
       "@type": "Dataset",
       "description": "This directory contains the images for the research project",
-      "hasPart": [
-        {
-          "@id": "pics/2017-06-11 12.56.14.jpg"
-        },
-        {
-          "@id": "pics/sepia_fence.jpg"
-        },
-        {
-          "@id": "pics/thumbs/"
-        }
-      ],
+      "hasPart": "",
       "name": "Pictures",
       "@reverse": {
         "hasPart": [
           {
-            "@id": "/"
+            "@id": "./"
           }
         ]
       }
@@ -514,6 +507,7 @@
       "creator": {
         "@id": "http://orcid.org/0000-0002-3545-944X"
       },
+      "dateModified": "",
       "description": "Depicts a fence at a disused motor racing venue with the front part of a slightly out of focus black dog in the foreground.",
       "encodingFormat": "Exchangeable Image File Format (Compressed)",
       "fileFormat": "http://www.nationalarchives.gov.uk/PRONOM/fmt/645",
@@ -531,11 +525,6 @@
           {
             "@id": "#SepiaConversion"
           }
-        ],
-        "hasPart": [
-          {
-            "@id": "pics/"
-          }
         ]
       }
     },
@@ -547,6 +536,7 @@
       ],
       "contentSize": "4855037",
       "creator": "",
+      "dateModified": "",
       "description": "Sepia tone version of my fence/dog pic",
       "encodingFormat": "JPEG File Interchange Format",
       "fileFormat": "http://www.nationalarchives.gov.uk/PRONOM/fmt/43",
@@ -558,11 +548,6 @@
         "result": [
           {
             "@id": "#SepiaConversion"
-          }
-        ],
-        "hasPart": [
-          {
-            "@id": "pics/"
           }
         ]
       }
@@ -579,20 +564,14 @@
           "@id": "pics/thumbs/sepia_fence.png"
         }
       ],
-      "name": "Thumbnails",
-      "@reverse": {
-        "hasPart": [
-          {
-            "@id": "pics/"
-          }
-        ]
-      }
+      "name": "Thumbnails"
     },
     {
       "@id": "pics/thumbs/2017-06-11 12.56.14.png",
       "@type": "File",
       "contentSize": "20594",
       "creator": "",
+      "dateModified": "",
       "description": "",
       "encodingFormat": "Portable Network Graphics",
       "fileFormat": "http://www.nationalarchives.gov.uk/PRONOM/fmt/11",
@@ -615,6 +594,7 @@
       "@type": "File",
       "contentSize": "20524",
       "creator": "",
+      "dateModified": "",
       "description": "",
       "encodingFormat": "Portable Network Graphics",
       "fileFormat": "http://www.nationalarchives.gov.uk/PRONOM/fmt/11",
@@ -636,7 +616,7 @@
       "@id": "ro-crate-metadata.json",
       "@type": "CreativeWork",
       "about": {
-        "@id": "/"
+        "@id": "./"
       },
       "identifier": "ro-crate-metadata.json"
     },
@@ -648,7 +628,7 @@
       "@reverse": {
         "distribution": [
           {
-            "@id": "/"
+            "@id": "./"
           }
         ]
       }
@@ -659,7 +639,7 @@
 
     
 <!-- script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script -->
-<script src="https://data.research.uts.edu.au/examples/ro-crate/examples/src/crate.js"></script>
+<script src="https://unpkg.com/ro-crate-html-js/dist/ro-crate-dynamic.js"></script>
 
 <link rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -694,7 +674,11 @@ table.table {
 
 
 <a href="./ro-crate-metadata.json">⬇️🏷️ Download all the metadata for <span class='name'>Sample dataset for RO-Crate v1.1</span> in JSON-LD format</a>
+
+
 <div id="check"></div>
+
+
 </div>
 
 
@@ -707,12 +691,12 @@ table.table {
             
             
             
-        <div id="/">
+        <div id="./">
             
             <table class="table metadata table-striped" >
                 <tbody><tr>
             <th style="text-align:left;" class="prop">@id</th>
-            <td style='text-align:left'><span>/</span></td>
+            <td style='text-align:left'><span>./</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
             <td style='text-align:left'><span>Sample dataset for RO-Crate v1.1</span></td>
@@ -761,7 +745,7 @@ table.table {
                         </ul></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">identifier<span>&nbsp;</span><a href="http://schema.org/identifier">[?]</a></th>
-            <td style='text-align:left'></td>
+            <td style='text-align:left'><a href="https://dx.doi.org/10.5281/zenodo.1009240">https://dx.doi.org/10.5281/zenodo.1009240</a></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">keywords<span>&nbsp;</span><a href="http://schema.org/keywords">[?]</a></th>
             <td style='text-align:left'><span>Dogs, Fences, The Gully</span></td>
@@ -797,7 +781,7 @@ table.table {
             <table class="table metadata table-striped" >
                 <tbody><tr>
             <th style="text-align:left;" class="prop">@id</th>
-            <td style='text-align:left'></td>
+            <td style='text-align:left'><a href="http://ands.org.au">http://ands.org.au</a></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
             <td style='text-align:left'><span>Australian National Data Service</span></td>
@@ -810,7 +794,7 @@ table.table {
             </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
             <th style="text-align:left;" class="prop">funder<span>&nbsp;</span><a href="http://schema.org/funder">[?]</a></th>
             <td style='text-align:left'><ul>
-                        <li><a href="#/">Sample dataset for RO-Crate v1.1</a></li>
+                        <li><a href="#./">Sample dataset for RO-Crate v1.1</a></li>
                         
                         <li><a href="#http%3A//eresearch.uts.edu.au/projects/provisioner">Provisioner Project</a></li>
                         </ul></td>
@@ -831,7 +815,7 @@ table.table {
             <table class="table metadata table-striped" >
                 <tbody><tr>
             <th style="text-align:left;" class="prop">@id</th>
-            <td style='text-align:left'></td>
+            <td style='text-align:left'><a href="https://ror.org/0384j8v12">https://ror.org/0384j8v12</a></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
             <td style='text-align:left'><span>University of Technology Sydney</span></td>
@@ -850,7 +834,7 @@ table.table {
             </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
             <th style="text-align:left;" class="prop">funder<span>&nbsp;</span><a href="http://schema.org/funder">[?]</a></th>
             <td style='text-align:left'><ul>
-                        <li><a href="#/">Sample dataset for RO-Crate v1.1</a></li>
+                        <li><a href="#./">Sample dataset for RO-Crate v1.1</a></li>
                         
                         <li><a href="#http%3A//eresearch.uts.edu.au/projects/provisioner">Provisioner Project</a></li>
                         
@@ -858,7 +842,7 @@ table.table {
                         </ul></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">publisher<span>&nbsp;</span><a href="http://schema.org/publisher">[?]</a></th>
-            <td style='text-align:left'><a href="#/">Sample dataset for RO-Crate v1.1</a></td>
+            <td style='text-align:left'><a href="#./">Sample dataset for RO-Crate v1.1</a></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">affiliation<span>&nbsp;</span><a href="http://schema.org/affiliation">[?]</a></th>
             <td style='text-align:left'><a href="#http%3A//orcid.org/0000-0002-3545-944X">Peter Sefton</a></td>
@@ -879,7 +863,7 @@ table.table {
             <table class="table metadata table-striped" >
                 <tbody><tr>
             <th style="text-align:left;" class="prop">@id</th>
-            <td style='text-align:left'></td>
+            <td style='text-align:left'><a href="https://github.com/UTS-eResearch/projects/datacrate">https://github.com/UTS-eResearch/projects/datacrate</a></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
             <td style='text-align:left'><span>DataCrate Project</span></td>
@@ -894,7 +878,7 @@ table.table {
             <td style='text-align:left'><a href="#https%3A//ror.org/0384j8v12">University of Technology Sydney</a></td>
             </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
             <th style="text-align:left;" class="prop">funder<span>&nbsp;</span><a href="http://schema.org/funder">[?]</a></th>
-            <td style='text-align:left'><a href="#/">Sample dataset for RO-Crate v1.1</a></td>
+            <td style='text-align:left'><a href="#./">Sample dataset for RO-Crate v1.1</a></td>
             </tr></tbody>
             </table>
         </div>
@@ -912,7 +896,7 @@ table.table {
             <table class="table metadata table-striped" >
                 <tbody><tr>
             <th style="text-align:left;" class="prop">@id</th>
-            <td style='text-align:left'></td>
+            <td style='text-align:left'><a href="http://orcid.org/0000-0002-3545-944X">http://orcid.org/0000-0002-3545-944X</a></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
             <td style='text-align:left'><span>Peter Sefton</span></td>
@@ -944,7 +928,7 @@ table.table {
             </tr><tr>
             <th style="text-align:left;" class="prop">author<span>&nbsp;</span><a href="http://schema.org/author">[?]</a></th>
             <td style='text-align:left'><ul>
-                        <li><a href="#/">Sample dataset for RO-Crate v1.1</a></li>
+                        <li><a href="#./">Sample dataset for RO-Crate v1.1</a></li>
                         
                         <li><a href="#http%3A//dx.doi.org/10.1000/123456">This is an example publication with a dodgy DOI</a></li>
                         </ul></td>
@@ -968,7 +952,7 @@ table.table {
             <table class="table metadata table-striped" >
                 <tbody><tr>
             <th style="text-align:left;" class="prop">@id</th>
-            <td style='text-align:left'></td>
+            <td style='text-align:left'><a href="http://dx.doi.org/10.1000/123456">http://dx.doi.org/10.1000/123456</a></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
             <td style='text-align:left'><span>This is an example publication with a dodgy DOI</span></td>
@@ -983,7 +967,7 @@ table.table {
             <td style='text-align:left'><a href="#http%3A//orcid.org/0000-0002-3545-944X">Peter Sefton</a></td>
             </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
             <th style="text-align:left;" class="prop">citation<span>&nbsp;</span><a href="http://schema.org/citation">[?]</a></th>
-            <td style='text-align:left'><a href="#/">Sample dataset for RO-Crate v1.1</a></td>
+            <td style='text-align:left'><a href="#./">Sample dataset for RO-Crate v1.1</a></td>
             </tr></tbody>
             </table>
         </div>
@@ -1016,7 +1000,7 @@ table.table {
             <td style='text-align:left'><span>customer service</span></td>
             </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
             <th style="text-align:left;" class="prop">contactPoint<span>&nbsp;</span><a href="http://schema.org/contactPoint">[?]</a></th>
-            <td style='text-align:left'><a href="#/">Sample dataset for RO-Crate v1.1</a></td>
+            <td style='text-align:left'><a href="#./">Sample dataset for RO-Crate v1.1</a></td>
             </tr></tbody>
             </table>
         </div>
@@ -1034,7 +1018,7 @@ table.table {
             <table class="table metadata table-striped" >
                 <tbody><tr>
             <th style="text-align:left;" class="prop">@id</th>
-            <td style='text-align:left'></td>
+            <td style='text-align:left'><a href="http://www.geonames.org/8152662/catalina-park.html">http://www.geonames.org/8152662/catalina-park.html</a></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
             <td style='text-align:left'><span>Catalina Park</span></td>
@@ -1046,7 +1030,7 @@ table.table {
             <td style='text-align:left'><span>Catalina Park is a disused motor racing venue, located at Katoomba, in the Blue Mountains, New South Wales, Australia, and is recognised as an Aboriginal Place due to the long association of the local Gundungarra and Darug clans to the area.</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">URL<span>&nbsp;</span><a href="http://schema.org/URL">[?]</a></th>
-            <td style='text-align:left'></td>
+            <td style='text-align:left'><a href="https://en.wikipedia.org/wiki/Catalina_Park">https://en.wikipedia.org/wiki/Catalina_Park</a></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">address<span>&nbsp;</span><a href="http://schema.org/address">[?]</a></th>
             <td style='text-align:left'><span>Katoomba, NSW</span></td>
@@ -1058,7 +1042,7 @@ table.table {
             <td style='text-align:left'><a href="#%23Photo1">Took dog picture</a></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">contentLocation<span>&nbsp;</span><a href="http://schema.org/contentLocation">[?]</a></th>
-            <td style='text-align:left'><a href="#/">Sample dataset for RO-Crate v1.1</a></td>
+            <td style='text-align:left'><a href="#./">Sample dataset for RO-Crate v1.1</a></td>
             </tr></tbody>
             </table>
         </div>
@@ -1110,7 +1094,7 @@ table.table {
             <td style='text-align:left'></td>
             </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
             <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
-            <td style='text-align:left'><a href="#/">Sample dataset for RO-Crate v1.1</a></td>
+            <td style='text-align:left'><a href="#./">Sample dataset for RO-Crate v1.1</a></td>
             </tr></tbody>
             </table>
         </div>
@@ -1162,7 +1146,7 @@ table.table {
             <td style='text-align:left'></td>
             </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
             <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
-            <td style='text-align:left'><a href="#/">Sample dataset for RO-Crate v1.1</a></td>
+            <td style='text-align:left'><a href="#./">Sample dataset for RO-Crate v1.1</a></td>
             </tr></tbody>
             </table>
         </div>
@@ -1210,7 +1194,7 @@ table.table {
             <td style='text-align:left'></td>
             </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
             <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
-            <td style='text-align:left'><a href="#/">Sample dataset for RO-Crate v1.1</a></td>
+            <td style='text-align:left'><a href="#./">Sample dataset for RO-Crate v1.1</a></td>
             </tr></tbody>
             </table>
         </div>
@@ -1240,7 +1224,7 @@ table.table {
             <td style='text-align:left'><span>This directory contains many small files, that we’re not going to describe in detail.</span></td>
             </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
             <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
-            <td style='text-align:left'><a href="#/">Sample dataset for RO-Crate v1.1</a></td>
+            <td style='text-align:left'><a href="#./">Sample dataset for RO-Crate v1.1</a></td>
             </tr></tbody>
             </table>
         </div>
@@ -1270,16 +1254,10 @@ table.table {
             <td style='text-align:left'><span>This directory contains the images for the research project</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
-            <td style='text-align:left'><ul>
-                        <li><a href="#pics/2017-06-11%2012.56.14.jpg">pics/2017-06-11 12.56.14.jpg</a></li>
-                        
-                        <li><a href="#pics/sepia_fence.jpg">pics/sepia_fence.jpg</a></li>
-                        
-                        <li><a href="#pics/thumbs/">Thumbnails</a></li>
-                        </ul></td>
+            <td style='text-align:left'></td>
             </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
             <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
-            <td style='text-align:left'><a href="#/">Sample dataset for RO-Crate v1.1</a></td>
+            <td style='text-align:left'><a href="#./">Sample dataset for RO-Crate v1.1</a></td>
             </tr></tbody>
             </table>
         </div>
@@ -1297,7 +1275,7 @@ table.table {
             <table class="table metadata table-striped" >
                 <tbody><tr>
             <th style="text-align:left;" class="prop">@id</th>
-            <td style='text-align:left'></td>
+            <td style='text-align:left'><a href="https://creativecommons.org/licenses/by-nc-sa/3.0/au/">https://creativecommons.org/licenses/by-nc-sa/3.0/au/</a></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
             <td style='text-align:left'><span>Attribution-NonCommercial-ShareAlike 3.0 Australia (CC BY-NC-SA 3.0 AU)</span></td>
@@ -1309,7 +1287,7 @@ table.table {
             <td style='text-align:left'><span>This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Australia License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/3.0/au/ or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.</span></td>
             </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
             <th style="text-align:left;" class="prop">license<span>&nbsp;</span><a href="http://schema.org/license">[?]</a></th>
-            <td style='text-align:left'><a href="#/">Sample dataset for RO-Crate v1.1</a></td>
+            <td style='text-align:left'><a href="#./">Sample dataset for RO-Crate v1.1</a></td>
             </tr></tbody>
             </table>
         </div>
@@ -1327,7 +1305,7 @@ table.table {
             <table class="table metadata table-striped" >
                 <tbody><tr>
             <th style="text-align:left;" class="prop">@id</th>
-            <td style='text-align:left'></td>
+            <td style='text-align:left'><a href="https://www.researchobject.org/example-ro-sample-image-crate/download/sample-crate.zip">https://www.researchobject.org/example-ro-sample-image-crate/download/sample-crate.zip</a></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">@type</th>
             <td style='text-align:left'><span>DataDownload</span></td>
@@ -1336,10 +1314,10 @@ table.table {
             <td style='text-align:left'><span>zip</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">contentUrl<span>&nbsp;</span><a href="http://schema.org/contentUrl">[?]</a></th>
-            <td style='text-align:left'></td>
+            <td style='text-align:left'><a href="https://www.researchobject.org/example-ro-sample-image-crate/download/sample-crate.zip">https://www.researchobject.org/example-ro-sample-image-crate/download/sample-crate.zip</a></td>
             </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
             <th style="text-align:left;" class="prop">distribution<span>&nbsp;</span><a href="http://schema.org/distribution">[?]</a></th>
-            <td style='text-align:left'><a href="#/">Sample dataset for RO-Crate v1.1</a></td>
+            <td style='text-align:left'><a href="#./">Sample dataset for RO-Crate v1.1</a></td>
             </tr></tbody>
             </table>
         </div>
@@ -1349,11 +1327,7 @@ table.table {
 </div>
 
 
-<p>This file was created at 1612133218173 by
-<a href='https://code.research.uts.edu.au/eresearch/calcytejs'>
-Calcyte</a> which implements the <a href=''>
-Draft RO-Crate format</a>, version 
- </p>
+
 
 
 </body>

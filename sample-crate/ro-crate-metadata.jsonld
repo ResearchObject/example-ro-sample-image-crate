@@ -3,6 +3,9 @@
     "https://w3id.org/ro/crate/1.1/context",
     {
       "@vocab": "http://schema.org/"
+    },
+    {
+      "@base": null
     }
   ],
   "@graph": [
@@ -83,7 +86,7 @@
       "name": ""
     },
     {
-      "@id": "/",
+      "@id": "./",
       "@type": "Dataset",
       "author": {
         "@id": "http://orcid.org/0000-0002-3545-944X"
@@ -305,17 +308,7 @@
       "@id": "pics/",
       "@type": "Dataset",
       "description": "This directory contains the images for the research project",
-      "hasPart": [
-        {
-          "@id": "pics/2017-06-11 12.56.14.jpg"
-        },
-        {
-          "@id": "pics/sepia_fence.jpg"
-        },
-        {
-          "@id": "pics/thumbs/"
-        }
-      ],
+      "hasPart": "",
       "name": "Pictures"
     },
     {
@@ -328,6 +321,7 @@
       "creator": {
         "@id": "http://orcid.org/0000-0002-3545-944X"
       },
+      "dateModified": "",
       "description": "Depicts a fence at a disused motor racing venue with the front part of a slightly out of focus black dog in the foreground.",
       "encodingFormat": "Exchangeable Image File Format (Compressed)",
       "fileFormat": "http://www.nationalarchives.gov.uk/PRONOM/fmt/645",
@@ -344,6 +338,7 @@
       ],
       "contentSize": "4855037",
       "creator": "",
+      "dateModified": "",
       "description": "Sepia tone version of my fence/dog pic",
       "encodingFormat": "JPEG File Interchange Format",
       "fileFormat": "http://www.nationalarchives.gov.uk/PRONOM/fmt/43",
@@ -371,6 +366,7 @@
       "@type": "File",
       "contentSize": "20594",
       "creator": "",
+      "dateModified": "",
       "description": "",
       "encodingFormat": "Portable Network Graphics",
       "fileFormat": "http://www.nationalarchives.gov.uk/PRONOM/fmt/11",
@@ -381,6 +377,7 @@
       "@type": "File",
       "contentSize": "20524",
       "creator": "",
+      "dateModified": "",
       "description": "",
       "encodingFormat": "Portable Network Graphics",
       "fileFormat": "http://www.nationalarchives.gov.uk/PRONOM/fmt/11",
@@ -390,7 +387,7 @@
       "@id": "ro-crate-metadata.json",
       "@type": "CreativeWork",
       "about": {
-        "@id": "/"
+        "@id": "./"
       },
       "identifier": "ro-crate-metadata.json"
     },
