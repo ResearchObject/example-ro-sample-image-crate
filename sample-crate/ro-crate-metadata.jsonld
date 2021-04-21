@@ -113,17 +113,6 @@
           "@id": "https://github.com/UTS-eResearch/projects/datacrate"
         }
       ],
-      "hasPart": [
-        "\"LICENSE\"",
-        "\"README.md\"",
-        "\"index.html\"",
-        {
-          "@id": "lots_of_little_files/"
-        },
-        {
-          "@id": "pics/"
-        }
-      ],
       "identifier": "https://dx.doi.org/10.5281/zenodo.1009240",
       "keywords": "Dogs, Fences, The Gully",
       "license": {
@@ -134,6 +123,14 @@
         "@id": "https://ror.org/0384j8v12"
       },
       "temporalCoverage": "2017",
+      "hasPart": [
+        {
+          "@id": "lots_of_little_files/"
+        },
+        {
+          "@id": "pics/"
+        }
+      ],
       "distribution": [
         {
           "@id": "https://www.researchobject.org/example-ro-sample-image-crate/download/sample-crate.zip"
