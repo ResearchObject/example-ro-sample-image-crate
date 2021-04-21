@@ -114,15 +114,9 @@
         }
       ],
       "hasPart": [
-        {
-          "@id": "LICENSE"
-        },
-        {
-          "@id": "README.md"
-        },
-        {
-          "@id": "index.html"
-        },
+        "\"LICENSE\"",
+        "\"README.md\"",
+        "\"index.html\"",
         {
           "@id": "lots_of_little_files/"
         },
@@ -145,40 +139,6 @@
           "@id": "https://www.researchobject.org/example-ro-sample-image-crate/download/sample-crate.zip"
         }
       ]
-    },
-    {
-      "@id": "LICENSE",
-      "@type": "File",
-      "contentSize": "35149",
-      "creator": "",
-      "dateModified": "2021-01-19T15:47:13+11:00",
-      "description": "",
-      "encodingFormat": [
-        {
-          "@id": "https://www.nationalarchives.gov.uk/PRONOM/pronom"
-        },
-        "text/plain"
-      ],
-      "fileFormat": "",
-      "name": "LICENSE",
-      "thumbnail": ""
-    },
-    {
-      "@id": "README.md",
-      "@type": "File",
-      "contentSize": "31",
-      "creator": "",
-      "dateModified": "2021-01-19T15:47:13+11:00",
-      "description": "",
-      "encodingFormat": [
-        {
-          "@id": "https://www.nationalarchives.gov.uk/PRONOM/pronom"
-        },
-        "text/plain"
-      ],
-      "fileFormat": "",
-      "name": "README.md",
-      "thumbnail": ""
     },
     {
       "@id": "http://ands.org.au",
@@ -273,28 +233,20 @@
       "version": " ImageMagick 7.0.8-2 Q16 x86_64 2018-06-19"
     },
     {
+      "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/645",
+      "@type": "website",
+      "name": "Exchangeable Image File Format (Compressed)"
+    },
+    {
       "@id": "https://www.nationalarchives.gov.uk/PRONOM/pronom",
       "@type": "website",
       "name": "Plain Text File"
     },
     {
-      "@id": "index.html",
-      "@type": "File",
-      "contentSize": "17",
-      "creator": "",
-      "dateModified": "2021-01-19T15:47:13+11:00",
-      "description": "",
-      "encodingFormat": {
-        "@id": "https://www.nationalarchives.gov.uk/PRONOM/pronom"
-      },
-      "fileFormat": "",
-      "name": "index.html",
-      "thumbnail": ""
-    },
-    {
       "@id": "lots_of_little_files/",
       "@type": "Dataset",
       "description": "This directory contains many small files, that we’re not going to describe in detail.",
+      "hasPart": [],
       "name": "Too many files"
     },
     {
@@ -308,7 +260,17 @@
       "@id": "pics/",
       "@type": "Dataset",
       "description": "This directory contains the images for the research project",
-      "hasPart": "",
+      "hasPart": [
+        {
+          "@id": "pics/2017-06-11 12.56.14.jpg"
+        },
+        {
+          "@id": "pics/sepia_fence.jpg"
+        },
+        {
+          "@id": "pics/thumbs/"
+        }
+      ],
       "name": "Pictures"
     },
     {
@@ -317,13 +279,18 @@
         "File",
         "ImageObject"
       ],
-      "contentSize": "5114778",
+      "contentSize": 5114778,
       "creator": {
         "@id": "http://orcid.org/0000-0002-3545-944X"
       },
-      "dateModified": "",
+      "dateModified": "2021-04-21T11:27:03+10:00",
       "description": "Depicts a fence at a disused motor racing venue with the front part of a slightly out of focus black dog in the foreground.",
-      "encodingFormat": "Exchangeable Image File Format (Compressed)",
+      "encodingFormat": [
+        {
+          "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/645"
+        },
+        "image/jpeg"
+      ],
       "fileFormat": "http://www.nationalarchives.gov.uk/PRONOM/fmt/645",
       "name": "pics/2017-06-11 12.56.14.jpg",
       "thumbnail": {
@@ -336,11 +303,18 @@
         "File",
         "ImageObject"
       ],
-      "contentSize": "4855037",
-      "creator": "",
-      "dateModified": "",
+      "contentSize": 4855037,
+      "creator": {
+        "@id": "http://orcid.org/0000-0002-3545-944X"
+      },
+      "dateModified": "2021-04-21T11:27:03+10:00",
       "description": "Sepia tone version of my fence/dog pic",
-      "encodingFormat": "JPEG File Interchange Format",
+      "encodingFormat": [
+        {
+          "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/43"
+        },
+        "image/jpeg"
+      ],
       "fileFormat": "http://www.nationalarchives.gov.uk/PRONOM/fmt/43",
       "name": "pics/sepia_fence.jpg",
       "thumbnail": {
@@ -364,22 +338,32 @@
     {
       "@id": "pics/thumbs/2017-06-11 12.56.14.png",
       "@type": "File",
-      "contentSize": "20594",
+      "contentSize": 20594,
       "creator": "",
-      "dateModified": "",
+      "dateModified": "2021-04-21T11:27:03+10:00",
       "description": "",
-      "encodingFormat": "Portable Network Graphics",
+      "encodingFormat": [
+        {
+          "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/11"
+        },
+        "image/png"
+      ],
       "fileFormat": "http://www.nationalarchives.gov.uk/PRONOM/fmt/11",
       "name": "pics/thumbs/2017-06-11 12.56.14.png"
     },
     {
       "@id": "pics/thumbs/sepia_fence.png",
       "@type": "File",
-      "contentSize": "20524",
+      "contentSize": 20524,
       "creator": "",
-      "dateModified": "",
+      "dateModified": "2021-04-21T11:27:03+10:00",
       "description": "",
-      "encodingFormat": "Portable Network Graphics",
+      "encodingFormat": [
+        {
+          "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/11"
+        },
+        "image/png"
+      ],
       "fileFormat": "http://www.nationalarchives.gov.uk/PRONOM/fmt/11",
       "name": "pics/thumbs/sepia_fence.png"
     },

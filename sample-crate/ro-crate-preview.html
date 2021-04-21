@@ -142,15 +142,9 @@
         }
       ],
       "hasPart": [
-        {
-          "@id": "LICENSE"
-        },
-        {
-          "@id": "README.md"
-        },
-        {
-          "@id": "index.html"
-        },
+        "\"LICENSE\"",
+        "\"README.md\"",
+        "\"index.html\"",
         {
           "@id": "lots_of_little_files/"
         },
@@ -177,54 +171,6 @@
         "about": [
           {
             "@id": "ro-crate-metadata.json"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "LICENSE",
-      "@type": "File",
-      "contentSize": "35149",
-      "creator": "",
-      "dateModified": "2021-01-19T15:47:13+11:00",
-      "description": "",
-      "encodingFormat": [
-        {
-          "@id": "https://www.nationalarchives.gov.uk/PRONOM/pronom"
-        },
-        "text/plain"
-      ],
-      "fileFormat": "",
-      "name": "LICENSE",
-      "thumbnail": "",
-      "@reverse": {
-        "hasPart": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "README.md",
-      "@type": "File",
-      "contentSize": "31",
-      "creator": "",
-      "dateModified": "2021-01-19T15:47:13+11:00",
-      "description": "",
-      "encodingFormat": [
-        {
-          "@id": "https://www.nationalarchives.gov.uk/PRONOM/pronom"
-        },
-        "text/plain"
-      ],
-      "fileFormat": "",
-      "name": "README.md",
-      "thumbnail": "",
-      "@reverse": {
-        "hasPart": [
-          {
-            "@id": "./"
           }
         ]
       }
@@ -306,6 +252,9 @@
         "creator": [
           {
             "@id": "pics/2017-06-11 12.56.14.jpg"
+          },
+          {
+            "@id": "pics/sepia_fence.jpg"
           }
         ]
       }
@@ -418,48 +367,27 @@
       }
     },
     {
-      "@id": "https://www.nationalarchives.gov.uk/PRONOM/pronom",
+      "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/645",
       "@type": "website",
-      "name": "Plain Text File",
+      "name": "Exchangeable Image File Format (Compressed)",
       "@reverse": {
         "encodingFormat": [
           {
-            "@id": "LICENSE"
-          },
-          {
-            "@id": "README.md"
-          },
-          {
-            "@id": "index.html"
+            "@id": "pics/2017-06-11 12.56.14.jpg"
           }
         ]
       }
     },
     {
-      "@id": "index.html",
-      "@type": "File",
-      "contentSize": "17",
-      "creator": "",
-      "dateModified": "2021-01-19T15:47:13+11:00",
-      "description": "",
-      "encodingFormat": {
-        "@id": "https://www.nationalarchives.gov.uk/PRONOM/pronom"
-      },
-      "fileFormat": "",
-      "name": "index.html",
-      "thumbnail": "",
-      "@reverse": {
-        "hasPart": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
+      "@id": "https://www.nationalarchives.gov.uk/PRONOM/pronom",
+      "@type": "website",
+      "name": "Plain Text File"
     },
     {
       "@id": "lots_of_little_files/",
       "@type": "Dataset",
       "description": "This directory contains many small files, that we’re not going to describe in detail.",
+      "hasPart": [],
       "name": "Too many files",
       "@reverse": {
         "hasPart": [
@@ -487,7 +415,17 @@
       "@id": "pics/",
       "@type": "Dataset",
       "description": "This directory contains the images for the research project",
-      "hasPart": "",
+      "hasPart": [
+        {
+          "@id": "pics/2017-06-11 12.56.14.jpg"
+        },
+        {
+          "@id": "pics/sepia_fence.jpg"
+        },
+        {
+          "@id": "pics/thumbs/"
+        }
+      ],
       "name": "Pictures",
       "@reverse": {
         "hasPart": [
@@ -503,13 +441,18 @@
         "File",
         "ImageObject"
       ],
-      "contentSize": "5114778",
+      "contentSize": 5114778,
       "creator": {
         "@id": "http://orcid.org/0000-0002-3545-944X"
       },
-      "dateModified": "",
+      "dateModified": "2021-04-21T11:27:03+10:00",
       "description": "Depicts a fence at a disused motor racing venue with the front part of a slightly out of focus black dog in the foreground.",
-      "encodingFormat": "Exchangeable Image File Format (Compressed)",
+      "encodingFormat": [
+        {
+          "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/645"
+        },
+        "image/jpeg"
+      ],
       "fileFormat": "http://www.nationalarchives.gov.uk/PRONOM/fmt/645",
       "name": "pics/2017-06-11 12.56.14.jpg",
       "thumbnail": {
@@ -525,6 +468,11 @@
           {
             "@id": "#SepiaConversion"
           }
+        ],
+        "hasPart": [
+          {
+            "@id": "pics/"
+          }
         ]
       }
     },
@@ -534,11 +482,18 @@
         "File",
         "ImageObject"
       ],
-      "contentSize": "4855037",
-      "creator": "",
-      "dateModified": "",
+      "contentSize": 4855037,
+      "creator": {
+        "@id": "http://orcid.org/0000-0002-3545-944X"
+      },
+      "dateModified": "2021-04-21T11:27:03+10:00",
       "description": "Sepia tone version of my fence/dog pic",
-      "encodingFormat": "JPEG File Interchange Format",
+      "encodingFormat": [
+        {
+          "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/43"
+        },
+        "image/jpeg"
+      ],
       "fileFormat": "http://www.nationalarchives.gov.uk/PRONOM/fmt/43",
       "name": "pics/sepia_fence.jpg",
       "thumbnail": {
@@ -548,6 +503,11 @@
         "result": [
           {
             "@id": "#SepiaConversion"
+          }
+        ],
+        "hasPart": [
+          {
+            "@id": "pics/"
           }
         ]
       }
@@ -564,16 +524,28 @@
           "@id": "pics/thumbs/sepia_fence.png"
         }
       ],
-      "name": "Thumbnails"
+      "name": "Thumbnails",
+      "@reverse": {
+        "hasPart": [
+          {
+            "@id": "pics/"
+          }
+        ]
+      }
     },
     {
       "@id": "pics/thumbs/2017-06-11 12.56.14.png",
       "@type": "File",
-      "contentSize": "20594",
+      "contentSize": 20594,
       "creator": "",
-      "dateModified": "",
+      "dateModified": "2021-04-21T11:27:03+10:00",
       "description": "",
-      "encodingFormat": "Portable Network Graphics",
+      "encodingFormat": [
+        {
+          "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/11"
+        },
+        "image/png"
+      ],
       "fileFormat": "http://www.nationalarchives.gov.uk/PRONOM/fmt/11",
       "name": "pics/thumbs/2017-06-11 12.56.14.png",
       "@reverse": {
@@ -592,11 +564,16 @@
     {
       "@id": "pics/thumbs/sepia_fence.png",
       "@type": "File",
-      "contentSize": "20524",
+      "contentSize": 20524,
       "creator": "",
-      "dateModified": "",
+      "dateModified": "2021-04-21T11:27:03+10:00",
       "description": "",
-      "encodingFormat": "Portable Network Graphics",
+      "encodingFormat": [
+        {
+          "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/11"
+        },
+        "image/png"
+      ],
       "fileFormat": "http://www.nationalarchives.gov.uk/PRONOM/fmt/11",
       "name": "pics/thumbs/sepia_fence.png",
       "@reverse": {
@@ -733,11 +710,11 @@ table.table {
             </tr><tr>
             <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
             <td style='text-align:left'><ul>
-                        <li><a href="#LICENSE">LICENSE</a></li>
+                        <li><span>"LICENSE"</span></li>
                         
-                        <li><a href="#README.md">README.md</a></li>
+                        <li><span>"README.md"</span></li>
                         
-                        <li><a href="#index.html">index.html</a></li>
+                        <li><span>"index.html"</span></li>
                         
                         <li><a href="#lots_of_little_files/">Too many files</a></li>
                         
@@ -934,7 +911,11 @@ table.table {
                         </ul></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">creator<span>&nbsp;</span><a href="http://schema.org/creator">[?]</a></th>
-            <td style='text-align:left'><a href="#pics/2017-06-11%2012.56.14.jpg">pics/2017-06-11 12.56.14.jpg</a></td>
+            <td style='text-align:left'><ul>
+                        <li><a href="#pics/2017-06-11%2012.56.14.jpg">pics/2017-06-11 12.56.14.jpg</a></li>
+                        
+                        <li><a href="#pics/sepia_fence.jpg">pics/sepia_fence.jpg</a></li>
+                        </ul></td>
             </tr></tbody>
             </table>
         </div>
@@ -1050,158 +1031,6 @@ table.table {
         </div>
         <hr/><br/><br/>
            <div>
-            <h3><a href="LICENSE">⬇️ Download: </a> LICENSE</h3>
-            
-            
-            
-            
-        <div id="LICENSE">
-            
-            <table class="table metadata table-striped" >
-                <tbody><tr>
-            <th style="text-align:left;" class="prop">@id</th>
-            <td style='text-align:left'><span>LICENSE</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
-            <td style='text-align:left'><span>LICENSE</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">@type</th>
-            <td style='text-align:left'><span>File</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">description<span>&nbsp;</span><a href="http://schema.org/description">[?]</a></th>
-            <td style='text-align:left'></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">thumbnail<span>&nbsp;</span><a href="http://schema.org/thumbnail">[?]</a></th>
-            <td style='text-align:left'></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">encodingFormat<span>&nbsp;</span><a href="http://schema.org/encodingFormat">[?]</a></th>
-            <td style='text-align:left'><ul>
-                        <li><a href="#https%3A//www.nationalarchives.gov.uk/PRONOM/pronom">Plain Text File</a></li>
-                        
-                        <li><span>text/plain</span></li>
-                        </ul></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">contentSize<span>&nbsp;</span><a href="http://schema.org/contentSize">[?]</a></th>
-            <td style='text-align:left'><span>35149</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">creator<span>&nbsp;</span><a href="http://schema.org/creator">[?]</a></th>
-            <td style='text-align:left'></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">dateModified<span>&nbsp;</span><a href="http://schema.org/dateModified">[?]</a></th>
-            <td style='text-align:left'><span>2021-01-19T15:47:13+11:00</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">fileFormat<span>&nbsp;</span><a href="http://schema.org/fileFormat">[?]</a></th>
-            <td style='text-align:left'></td>
-            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
-            <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
-            <td style='text-align:left'><a href="#./">Sample dataset for RO-Crate v1.1</a></td>
-            </tr></tbody>
-            </table>
-        </div>
-
-        </div>
-        <hr/><br/><br/>
-           <div>
-            <h3><a href="README.md">⬇️ Download: </a> README.md</h3>
-            
-            <iframe src='README.md' width='100%' height='500'></iframe>
-            
-            
-        <div id="README.md">
-            
-            <table class="table metadata table-striped" >
-                <tbody><tr>
-            <th style="text-align:left;" class="prop">@id</th>
-            <td style='text-align:left'><span>README.md</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
-            <td style='text-align:left'><span>README.md</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">@type</th>
-            <td style='text-align:left'><span>File</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">description<span>&nbsp;</span><a href="http://schema.org/description">[?]</a></th>
-            <td style='text-align:left'></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">thumbnail<span>&nbsp;</span><a href="http://schema.org/thumbnail">[?]</a></th>
-            <td style='text-align:left'></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">encodingFormat<span>&nbsp;</span><a href="http://schema.org/encodingFormat">[?]</a></th>
-            <td style='text-align:left'><ul>
-                        <li><a href="#https%3A//www.nationalarchives.gov.uk/PRONOM/pronom">Plain Text File</a></li>
-                        
-                        <li><span>text/plain</span></li>
-                        </ul></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">contentSize<span>&nbsp;</span><a href="http://schema.org/contentSize">[?]</a></th>
-            <td style='text-align:left'><span>31</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">creator<span>&nbsp;</span><a href="http://schema.org/creator">[?]</a></th>
-            <td style='text-align:left'></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">dateModified<span>&nbsp;</span><a href="http://schema.org/dateModified">[?]</a></th>
-            <td style='text-align:left'><span>2021-01-19T15:47:13+11:00</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">fileFormat<span>&nbsp;</span><a href="http://schema.org/fileFormat">[?]</a></th>
-            <td style='text-align:left'></td>
-            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
-            <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
-            <td style='text-align:left'><a href="#./">Sample dataset for RO-Crate v1.1</a></td>
-            </tr></tbody>
-            </table>
-        </div>
-
-        </div>
-        <hr/><br/><br/>
-           <div>
-            <h3><a href="index.html">⬇️ Download: </a> index.html</h3>
-            
-            <iframe src='index.html' width='100%' height='500'></iframe>
-            
-            
-        <div id="index.html">
-            
-            <table class="table metadata table-striped" >
-                <tbody><tr>
-            <th style="text-align:left;" class="prop">@id</th>
-            <td style='text-align:left'><span>index.html</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
-            <td style='text-align:left'><span>index.html</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">@type</th>
-            <td style='text-align:left'><span>File</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">description<span>&nbsp;</span><a href="http://schema.org/description">[?]</a></th>
-            <td style='text-align:left'></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">thumbnail<span>&nbsp;</span><a href="http://schema.org/thumbnail">[?]</a></th>
-            <td style='text-align:left'></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">encodingFormat<span>&nbsp;</span><a href="http://schema.org/encodingFormat">[?]</a></th>
-            <td style='text-align:left'><a href="#https%3A//www.nationalarchives.gov.uk/PRONOM/pronom">Plain Text File</a></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">contentSize<span>&nbsp;</span><a href="http://schema.org/contentSize">[?]</a></th>
-            <td style='text-align:left'><span>17</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">creator<span>&nbsp;</span><a href="http://schema.org/creator">[?]</a></th>
-            <td style='text-align:left'></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">dateModified<span>&nbsp;</span><a href="http://schema.org/dateModified">[?]</a></th>
-            <td style='text-align:left'><span>2021-01-19T15:47:13+11:00</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">fileFormat<span>&nbsp;</span><a href="http://schema.org/fileFormat">[?]</a></th>
-            <td style='text-align:left'></td>
-            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
-            <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
-            <td style='text-align:left'><a href="#./">Sample dataset for RO-Crate v1.1</a></td>
-            </tr></tbody>
-            </table>
-        </div>
-
-        </div>
-        <hr/><br/><br/>
-           <div>
             <h3> Too many files</h3>
             
             
@@ -1222,6 +1051,9 @@ table.table {
             </tr><tr>
             <th style="text-align:left;" class="prop">description<span>&nbsp;</span><a href="http://schema.org/description">[?]</a></th>
             <td style='text-align:left'><span>This directory contains many small files, that we’re not going to describe in detail.</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
+            <td style='text-align:left'></td>
             </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
             <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
             <td style='text-align:left'><a href="#./">Sample dataset for RO-Crate v1.1</a></td>
@@ -1254,7 +1086,13 @@ table.table {
             <td style='text-align:left'><span>This directory contains the images for the research project</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
-            <td style='text-align:left'></td>
+            <td style='text-align:left'><ul>
+                        <li><a href="#pics/2017-06-11%2012.56.14.jpg">pics/2017-06-11 12.56.14.jpg</a></li>
+                        
+                        <li><a href="#pics/sepia_fence.jpg">pics/sepia_fence.jpg</a></li>
+                        
+                        <li><a href="#pics/thumbs/">Thumbnails</a></li>
+                        </ul></td>
             </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
             <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
             <td style='text-align:left'><a href="#./">Sample dataset for RO-Crate v1.1</a></td>
